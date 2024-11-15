@@ -12,7 +12,7 @@
     - `git clone https://github.com/angelesmarin/Placenet-App-Frontend.git`
     - `git clone https://github.com/angelesmarin/Placenet-App-Backend.git`
 
-4. Change the IP in api.js in frontend to your own IP.
+4. Replace "localhost" in api.js in frontend with your own IP.
     - Find this in your machine's network settings under your connected network.
     - [Link to file](Placenet-App-Frontend\API\api.js) if front-end repo is cloned.
 
