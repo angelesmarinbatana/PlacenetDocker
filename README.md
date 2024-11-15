@@ -8,7 +8,7 @@
 2. Clone this repo via command line:
     - `git clone https://github.com/angelesmarin/PlacenetDocker.git`
 
-3. CD into the folder and clone the frontend and backebd repos.
+3. CD into the folder and clone the frontend and backend repos.
     - `git clone https://github.com/angelesmarin/Placenet-App-Frontend.git`
     - `git clone https://github.com/angelesmarin/Placenet-App-Backend.git`
 
