@@ -22,8 +22,6 @@
     - Find this in your machine's network settings under your connected network.
     - [Link to file in the frontend repo](https://github.com/angelesmarin/Placenet-App-Frontend/blob/development/API/api.js)
 
-- CD into the backend directory and run `git checkout 3dd8175` (BANDAID)
-
 - Create a file called ".env" in the backend directory with the following in it:
     - `DB_NAME=placenet`
     - `DB_USER=admin`
