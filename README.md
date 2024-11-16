@@ -68,7 +68,7 @@
              - You can manually change this within the docker container without needing to do a full rebuild by clicking on the placenet-app container, going to the "Files" tab, and navigating to `usr/src/app/placenet-app/API/api.js`.
              - Right-click api.js, and select "Edit file". Change what you need to, and press "ctrl/cmd + S" to save. Then restart the container.
         - Double check any spelling in the backend .env file.
-              - You can similarly edit the .env within docker without a full rebuild like above with the api script.
+            - You can similarly edit the .env within docker without a full rebuild like above with the api script.
         - Restart the backend container in Docker, or the full container for extra measure.
         - If all the above is correct, cd back to the docker directory and run `docker-compose build --no-cache` and then `docker-compose up` to rebuild the containers.
 
