@@ -18,7 +18,7 @@
 
 ## Set-up Environment
 
-- Replace "localhost" in Placenet-App-Frontend/API/api.js with your own IP.
+- Replace "localhost" in `Placenet-App-Frontend/API/api.js` with your own IP.
     - Find this in your machine's network settings under your connected network.
     - [Link to file in the frontend repo](https://github.com/angelesmarin/Placenet-App-Frontend/blob/development/API/api.js)
 
