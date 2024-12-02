@@ -29,6 +29,7 @@
     - `DB_HOST=postgres`
     - `DB_PORT=5432`
     - `PORT=3000`
+    - `JWT_SECRET=bat00bataupwcpsEQLbat00bat`
 
 ## Run 
 
