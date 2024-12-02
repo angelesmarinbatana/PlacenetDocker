@@ -62,7 +62,7 @@
 
 ## Testing and Troubleshooting
 
-- Test the app by going to `exp://youriphere:8081` on your mobile device, this should redirect you to Expo Go. Ensure your phone is connected to the same network as the device the project is on.
+- Test the app by going to `exp://youriphere:8081` on your mobile device, this should redirect you to Expo Go. Ensure your mobile device is connected to the same network as the device the project is on.
 - Use the Sign Up feature to create a new user of your own specifications.
     - If you run into issues or can't sign up/in with the app, check the following:
         - Ensure the IP in api.js in the frontend is your own IP and is spelled correctly.
