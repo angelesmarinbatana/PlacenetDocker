@@ -5,7 +5,9 @@
 - Download Docker for Desktop (v4.35.1 tested)
     - https://www.docker.com/products/docker-desktop/ 
     - Run the executable and open the app when done
-    - Also install the [CORS browser extension for Chrome](https://chromewebstore.google.com/detail/cross-domain-cors/mjhpgnbimicffchbodmgfnemoghjakai) (bandaid for now).
+
+- Also download Expo Go onto your mobile device. The Web build will not work.
+    - https://expo.dev/go
  
 ## Clone repos
 
@@ -30,6 +32,7 @@
     - `DB_PORT=5432`
     - `PORT=3000`
     - `JWT_SECRET=bat00bataupwcpsEQLbat00bat`
+    - AWS info will also have to go here. If you don't have it, contact either one of the repo contributors. The project will not store documents without it.
 
 ## Run 
 
@@ -55,16 +58,13 @@
             - `CREATE TABLE projects ( project_id SERIAL PRIMARY KEY, property_id INT REFERENCES properties(property_id) ON DELETE CASCADE, user_id INT REFERENCES users(user_id) ON DELETE CASCADE, name VARCHAR(255) NOT NULL, description TEXT, start_date DATE, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP );`
             - `CREATE TABLE documents ( document_id SERIAL PRIMARY KEY, project_id INT REFERENCES projects(project_id) ON DELETE CASCADE, user_id INT REFERENCES users(user_id) ON DELETE CASCADE, file_name VARCHAR(255) NOT NULL, file_path VARCHAR(255) NOT NULL, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP );`
         - Then run the script or press f5.
-
-- Right-click the "users" table and select "Query Tool".
-    - Enter the following SQL and execute the script by clicking the play button or pressing "f5":
-        - `INSERT INTO users(username,password_hash) VALUES ('lala','lala');`
+          
 
 ## Testing and Troubleshooting
 
-- Test the app by going to http://localhost:8081 and logging in with "lala" in both username and password.
-    - If you run into issues or can't sign in with the app, check the following:
-        - Ensure you have the CORS browser extension enabled.
+- Test the app by going to exp://<youriphere>:8081 on your mobile device, this should redirect you to Expo Go. Ensure your phone is connected to the same network as the device the project is on.
+- Use the Sign Up feature to create a new user of your own specifications.
+    - If you run into issues or can't sign up/in with the app, check the following:
         - Ensure the IP in api.js in the frontend is your own IP and is spelled correctly.
              - You can manually change this within the docker container without needing to do a full rebuild by clicking on the placenet-app container, going to the "Files" tab, and navigating to `usr/src/app/placenet-app/API/api.js`.
              - Right-click api.js, and select "Edit file". Change what you need to, and press "ctrl/cmd + S" to save. Then restart the container.
